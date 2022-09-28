@@ -42,11 +42,17 @@ conda env create -f environment-wsl2.yaml
 conda activate automatic
 mkdir embeddings
 mkdir repositories
-mkdir models
 git clone https://github.com/CompVis/stable-diffusion.git repositories/stable-diffusion
 git clone https://github.com/CompVis/taming-transformers.git repositories/taming-transformers
 git clone https://github.com/sczhou/CodeFormer.git repositories/CodeFormer
 git clone https://github.com/salesforce/BLIP.git repositories/BLIP
+git clone https://github.com/Hafiidz/latent-diffusion repositories/latent-diffusion
+wget "https://heibox.uni-heidelberg.de/f/31a76b13ea27482981b4/?dl=1"
+wget "https://heibox.uni-heidelberg.de/f/578df07c8fc04ffbadf3/?dl=1"
+mkdir -p /home/user/stable-diffusion-webui/repositories/latent-diffusion/experiments/pretrained_models/
+mkdir -p /home/user/stable-diffusion-webui/repositories/latent-diffusion/experiments/pretrained_models/
+mv /home/user/stable-diffusion-webui/index.html?dl=1 /home/user/stable-diffusion-webui/repositories/latent-diffusion/experiments/pretrained_models/project.yaml 
+mv /home/user/stable-diffusion-webui/index.html?dl=1.1 /home/user/stable-diffusion-webui/repositories/latent-diffusion/experiments/pretrained_models/model.ckpt
 pip3 install transformers==4.19.2 diffusers invisible-watermark 
 pip3 install git+https://github.com/crowsonkb/k-diffusion.git 
 pip3 install git+https://github.com/TencentARC/GFPGAN.git 
@@ -71,7 +77,7 @@ sudo npm cache clean -f
 sudo npm install -g n
 sudo n stable
 sudo npm install -g localtunnel
-echo "Click on the link with the random name below to access AUTOMATIC1111's SD-WebUI on your local PC once the initialization finishes and shows you the localhost link."
+echo "Click on the link with the random name ending with .lt below to access AUTOMATIC1111's SD-WebUI on your local PC once the initialization finishes and shows you the localhost link."
 lt --port 7860 &
  	
 echo "Initializing AUTOMATIC1111's SD-WebUI..."
