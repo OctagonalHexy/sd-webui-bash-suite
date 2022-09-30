@@ -1,6 +1,6 @@
 # <h1 align="center">📔 Arkitecc's Stable Diffusion WebUI Bash Suite 📔</h1>
 
-### I've added a complete walkthrough for how to set all of this up to my main installation guide over at 📔[Stable Diffusion Local Install Guide](https://docs.google.com/document/d/1owAMJGe56sbocCdrv7IO8fM6I4NLqxZ2bJgfI7EsYAw/edit#heading=h.lol8qgvyhlg2)📔!
+### I've added a complete walkthrough for how to set all of this up to my main installation guide over at 📔[Stable Diffusion Local Install Guide](https://stablediffusionguides.carrd.co)📔!
 
 #### Hi hi everyone! I'm back at it again, this time with a sick set of bash scripts for managing AUTOMATIC1111's [SD-WebUI](https://github.com/AUTOMATIC1111/stable-diffusion-webui)! 
 
