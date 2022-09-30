@@ -11,7 +11,16 @@ source ~/anaconda3/bin/activate
 conda init bash
 conda activate automatic
 
-echo "Click on the link with the random name below to access AUTOMATIC1111's SD-WebUI on your local PC once the initialization finishes and shows you the localhost link."
+# Local Tunnel Installation
+sudo apt-get update
+sudo apt-get upgrade -y
+sudo apt install npm -y
+sudo apt install nodejs -y
+sudo npm cache clean -f
+sudo npm install -g n
+sudo n stable
+sudo npm install -g localtunnel
+echo "Click on the link with the random name ending with .lt below to access AUTOMATIC1111's SD-WebUI on your local PC once the initialization finishes and shows you the localhost link."
 lt --port 7860 &
  	
 echo "Initializing AUTOMATIC1111's SD-WebUI..."
