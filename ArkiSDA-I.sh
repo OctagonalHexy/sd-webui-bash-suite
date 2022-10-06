@@ -63,7 +63,7 @@ pip3 install -r requirements.txt
 wget https://github.com/TencentARC/GFPGAN/releases/download/v1.3.0/GFPGANv1.3.pth
 cd /home/user/stable-diffusion-webui/models/
 
-curl -LO $CHECKPOINT
+curl $CHECKPOINT
 
 cd /home/user/stable-diffusion-webui/
 
