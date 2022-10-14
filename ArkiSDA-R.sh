@@ -24,5 +24,5 @@ echo "Click on the link with the random name ending with .lt below to access AUT
 lt --port 7860 &
  	
 echo "Initializing AUTOMATIC1111's SD-WebUI..."
-cd /stable-diffusion-webui/
+cd stable-diffusion-webui/
 python3 webui.py 
