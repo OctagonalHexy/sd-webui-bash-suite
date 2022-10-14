@@ -10,6 +10,7 @@ echo " "
 source ~/anaconda3/bin/activate 
 conda init bash
 conda activate automatic
+pip3 install fastapi
 
 # Local Tunnel Installation
 sudo apt-get update
