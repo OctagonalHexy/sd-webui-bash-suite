@@ -58,6 +58,7 @@ pip3 install git+https://github.com/crowsonkb/k-diffusion.git
 pip3 install git+https://github.com/TencentARC/GFPGAN.git 
 pip3 install -r repositories/CodeFormer/requirements.txt 
 pip3 install -r requirements.txt  
+pip3 install jsonmerge einops clean-fid resize_right torchdiffeq lark gradio fastapi omegaconf piexif fonts font-roboto pytorch_lightning transformers kornia realesrgan scunet timm
 
 
 wget https://github.com/TencentARC/GFPGAN/releases/download/v1.3.0/GFPGANv1.3.pth
@@ -65,7 +66,8 @@ cd /home/user/stable-diffusion-webui/models/
 
 curl $CHECKPOINT
 
-cd /home/user/stable-diffusion-webui/
+cd
+cd stable-diffusion-webui/
 
 clear
 echo "Installing Local Tunnel..."
